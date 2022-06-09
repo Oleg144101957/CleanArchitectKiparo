@@ -13,8 +13,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityMainBinding
     private val userRepository by lazy (LazyThreadSafetyMode.NONE){ UserRepositoryImpl(context = applicationContext) }
-    //private val getUserNameUseCase by lazy {GetUserNameUseCase(userRepository = userRepository)}
-    //private val saveUserNameUseCase by lazy { SaveUserNameUseCase(userRepository = userRepository)}
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
